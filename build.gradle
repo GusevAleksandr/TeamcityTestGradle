@@ -28,6 +28,7 @@ apply plugin: "org.ajoberstar.grgit"
 
 task getBranchName() {
     println(grgit.log(maxCommits:1))
-    grgit.tag.add(name:"newTag")
+    grgit.tag.add(name: 'newTag3')
+    grgit.push(tags: true)
 }
 
